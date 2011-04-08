@@ -62,6 +62,12 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 
+;; Load linum
+(when window-system
+  (add-to-list 'load-path "~/.emacs.d/vendor/linum")
+  (require 'linum)
+  (global-linum-mode 1))
+
 (regen-autoloads)
 (load custom-file 'noerror)
 
