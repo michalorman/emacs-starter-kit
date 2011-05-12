@@ -90,9 +90,13 @@
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
-;; Turn on haml-mode
+;; Turn on haml, sass and scss modes
 (add-to-list 'load-path "~/.emacs.d/vendor/haml-mode")
 (require 'haml-mode)
+(add-to-list 'load-path "~/.emacs.d/vendor/sass-mode")
+(require 'sass-mode)
+(add-to-list 'load-path "~/.emacs.d/vendor/scss-mode")
+(require 'scss-mode)
 
 ;; yasnippet
 
