@@ -85,4 +85,14 @@
 ;; Turn on visual line mode
 (global-visual-line-mode)
 
+;; Turn on feature-mode (cucumber)
+(add-to-list 'load-path "~/.emacs.d/vendor/feature-mode")
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+;; Turn on haml-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/haml-mode")
+(require 'haml-mode)
+
+
 ;;; init.el ends here
