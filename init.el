@@ -105,5 +105,8 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
 
+;; Duplicate line
+(add-to-list 'load-path "~/.emacs.d/vendor/duplicate-line")
+(require 'duplicate-line)
 
 ;;; init.el ends here
